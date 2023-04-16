@@ -16,7 +16,6 @@ const moodSlice = createSlice({
 	},
 	extraReducers: {
 		[getMoods.fulfilled]: (state, action) => {
-			state.isLoading = false;
 			state.moods = action.payload;
 		},
 	},
